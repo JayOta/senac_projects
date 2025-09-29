@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projetos Cadastrados</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mural de Projetos - <span id="serie-titulo"></span> Ano</h1>
+    </header>
+
+    <main class="container">
+      <a
+        href="cadastro.html"
+        class="btn-serie"
+        style="
+          width: auto;
+          padding: 10px 20px;
+          margin-bottom: 20px;
+          background-color: #3498db;
+        "
+        >← Voltar ao Cadastro</a
+      >
+
+      <div id="loading-message">Carregando projetos...</div>
+
+      <table class="tabela-projetos hidden">
+        <thead>
+          <tr>
+            <th>Nome do Aluno/Grupo</th>
+
+            <th>Atividade 1</th>
+
+            <th>Atividade 2</th>
+
+            <th>Atividade 3</th>
+
+            <th>Atividade 4</th>
+
+            <th>Atividade 5</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabela-corpo"></tbody>
+      </table>
+
+      <p
+        id="erro-message"
+        class="status-erro hidden"
+        style="margin-top: 20px"
+      ></p>
+    </main>
+
+    <script src="js/tabela.js"></script>
+  </body>
+</html>
