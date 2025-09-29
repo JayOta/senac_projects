@@ -1,9 +1,10 @@
 <?php
 // Define as credenciais do banco de dados (As mesmas de cadastrar.php)
-$servername = "localhost";
-$username = "root";    // Mude se necessário
-$password = "";      // Mude se necessário
-$dbname = "projetos_escola";
+$servername = "sql311.infinityfree.com";  // Hostname MySQL
+$username = "if0_40054926";               // Seu usuário MySQL
+$password = "63mHJ0W6yXtm0";                  // Senha do banco (gerada pelo InfinityFree)
+$dbname   = "if0_40054926_projetos_escola"; // Nome do banco
+$port     = 3306;
 
 // 1. Configura o cabeçalho para garantir que o navegador entenda que o retorno é JSON
 header('Content-Type: application/json');
@@ -26,7 +27,7 @@ if (empty($ano_serie) || !in_array($ano_serie, [1, 2, 3])) {
 }
 
 // 4. Conexão com o Banco de Dados
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     http_response_code(500);

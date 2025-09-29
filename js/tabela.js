@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loadingMessage.classList.add("hidden");
       tabelaElement.classList.add("hidden");
       erroMessage.textContent =
-        "Erro de conexão com o servidor. Verifique se o XAMPP/Servidor PHP está ativo.";
+        "Falha na conexão. Verifique se o servidor está disponível.";
       erroMessage.classList.remove("hidden");
       console.error("Erro de Fetch:", error);
     }

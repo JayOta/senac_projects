@@ -1,9 +1,10 @@
 <?php
 // Define as credenciais do banco de dados (Mude conforme seu ambiente local)
-$servername = "localhost";
-$username = "root";    // Mude se necessário
-$password = "";      // Mude se necessário
-$dbname = "projetos_escola"; // O nome do seu banco criado no XAMPP/MySQL
+$servername = "sql311.infinityfree.com";
+$username   = "if0_40054926";
+$password   = "63mHJ0W6yXtm0";
+$dbname     = "if0_40054926_projetos_escola";
+$port     = 3306;
 
 // Apenas aceita requisições POST para evitar acesso direto
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
@@ -32,7 +33,7 @@ if (empty($nome_aluno) || empty($ano_serie) || empty($link_github)) {
 }
 
 // 3. Conexão com o Banco de Dados
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Verifica a conexão
 if ($conn->connect_error) {

@@ -54,8 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       } catch (error) {
         mostrarStatus(
-          "Falha na conexão. Verifique se o XAMPP/Servidor está ligado.",
-          "erro"
+          "Falha na conexão. Verifique se o servidor está disponível."
         );
         console.error("Erro de conexão:", error);
       }
