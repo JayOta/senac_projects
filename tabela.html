@@ -16,40 +16,23 @@
     </header>
 
     <main class="container">
-      <a
-        href="index.html"
-        class="btn-serie"
-        style="
-          width: auto;
-          padding: 10px 20px;
-          margin-bottom: 20px;
-          background-color: #3498db;
-        "
-        >← Voltar ao Cadastro</a
-      >
-
       <div id="loading-message">Carregando projetos...</div>
 
-      <table class="tabela-projetos hidden">
-        <thead>
-          <tr>
-            <th>Nome do Aluno/Grupo</th>
-
-            <th>Atividade 1</th>
-
-            <th>Atividade 2</th>
-
-            <th>Atividade 3</th>
-
-            <th>Atividade 4</th>
-
-            <th>Atividade 5</th>
-          </tr>
-        </thead>
-
-        <tbody id="tabela-corpo"></tbody>
-      </table>
-
+      <div class="tabela-wrapper">
+        <table class="tabela-projetos hidden">
+          <thead>
+            <tr>
+              <th>Nome do Aluno/Grupo</th>
+              <th>Atividade 1</th>
+              <th>Atividade 2</th>
+              <th>Atividade 3</th>
+              <th>Atividade 4</th>
+              <th>Atividade 5</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-corpo"></tbody>
+        </table>
+      </div>
       <p
         id="erro-message"
         class="status-erro hidden"
