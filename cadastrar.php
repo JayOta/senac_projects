@@ -1,9 +1,9 @@
 <?php
 // Define as credenciais do banco de dados (Mude conforme seu ambiente local)
-$servername = "sql311.infinityfree.com";
-$username   = "if0_40054926";
-$password   = "63mHJ0W6yXtm0";
-$dbname     = "if0_40054926_projetos_escola";
+$servername = "#";
+$username   = "#";
+$password   = "#";
+$dbname     = "#";
 $port     = 3306;
 
 // Apenas aceita requisições POST para evitar acesso direto

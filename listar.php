@@ -1,9 +1,9 @@
 <?php
 // Define as credenciais do banco de dados (As mesmas de cadastrar.php)
-$servername = "sql311.infinityfree.com";  // Hostname MySQL
-$username = "if0_40054926";               // Seu usuário MySQL
-$password = "63mHJ0W6yXtm0";                  // Senha do banco (gerada pelo InfinityFree)
-$dbname   = "if0_40054926_projetos_escola"; // Nome do banco
+$servername = "#";  // Hostname MySQL
+$username = "#";               // Seu usuário MySQL
+$password = "#";                  // Senha do banco (gerada pelo InfinityFree)
+$dbname   = "#"; // Nome do banco
 $port     = 3306;
 
 // 1. Configura o cabeçalho para garantir que o navegador entenda que o retorno é JSON
